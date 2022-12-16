@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+/*SMARTPHONE*/
+@media screen and (max-width: 767px){
+
+    .log-container{background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(225,220,237,1) 100%);
+        width: 90%;
+        margin: 20vh auto auto auto;
+        border-radius: 14px;
+    }
+    .img-log{
+        display: none;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .log-tittle{
+        font-weight: 700;
+        font-size: 3.5vh;
+        margin-bottom: 15px;
+        margin-top: 40px;
+    }
+    .log-p{
+        font-weight: 400;
+        font-size: 2vh;
+        margin-bottom: 150px;
+    }
+    .log-email{
+        width: 90%;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        padding: 0 0 0 5px;
+        border: solid .09px #0000004a;
+    }
+    .log-email::placeholder{
+        color: #0000004a;
+        font-weight: 500;
+    }
+    .log-pass{
+        width: 90%;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        padding: 0 0 0 5px;
+        border: solid .09px #0000004a;
+    }
+    .log-pass::placeholder{
+        color: #0000004a;
+        font-weight: 500;
+    }
+    .log-input{
+        width: 90%;
+        height: 45px;
+        margin: 15px auto 40px auto;border: none;
+        background-color: #9300e7;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 7px;
+        transition: all 0.15s;
+        box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+-webkit-box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+-moz-box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+    }
+    .log-input:hover{
+        background-color: #7500b9;
+        box-shadow: none;
+    }
+
+}
+
+/*TABLET*/
+@media screen and (min-width:767px) and (max-width:1023px){
+
+    .log-container{
+        width: 80%;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(225,220,237,1) 100%);
+        margin: 100px auto 100px auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+    .img-log{
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .form-container{
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .log-tittle{
+        font-size: 23px;
+        font-weight: 800;
+    }
+    .log-p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .log-email{
+        width: 250px;
+        height: 35px;
+        margin-top: 40px;
+        border: none;
+        border-radius: 7px;
+        padding: 0 0 0 5px;
+        border: solid .09px #0000004a;
+    }
+    .log-email::placeholder{
+        color: #0000004a;
+        font-weight: 500;
+    }
+    
+    .log-pass{
+        width: 250px;
+        height: 35px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 7px;
+        padding: 0 0 0 5px;
+        border: solid .09px #0000004a;
+    }
+    .log-pass::placeholder{
+        color: #0000004a;
+        font-weight: 500;
+    }
+    .log-input{
+        width: 255px;
+        height: 40px;
+        margin-top:30px;
+        border: none;
+        background-color: #9300e7;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 7px;
+        transition: all 0.15s;
+        box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+-webkit-box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+-moz-box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+    }
+    .log-input:hover{
+        background-color: #7500b9;
+        box-shadow: none;
+    }
+
+}
+
+/*ESCRITORIO*/
+@media screen and (min-width:1024px){
+    .log-container{
+        width: 800px;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(225,220,237,1) 100%);
+        margin: 100px auto 100px auto;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+    .img-log{
+        width: 400px;
+        height: 600px;
+        border-radius: 15px;
+    }
+    .form-container{
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .log-tittle{
+        font-size: 27px;
+        font-weight: 600;
+    }
+    .log-p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .log-email{
+        width: 300px;
+        height: 35px;
+        margin-top: 40px;
+        border: none;
+        border-radius: 7px;
+        padding: 0 0 0 5px;
+        border: solid .09px #0000004a;
+    }
+    .log-email::placeholder{
+        color: #0000004a;
+        font-weight: 500;
+    }
+    
+    .log-pass{
+        width: 300px;
+        height: 35px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 7px;
+        padding: 0 0 0 5px;
+        border: solid .09px #0000004a;
+    }
+    .log-pass::placeholder{
+        color: #0000004a;
+        font-weight: 500;
+    }
+    .log-input{
+        width: 308px;
+        height: 40px;
+        margin-top:30px;
+        border: none;
+        background-color: #9300e7;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 7px;
+        transition: all 0.15s;
+        box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+-webkit-box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+-moz-box-shadow: 0px 11px 43px -3px rgba(147,0,231,0.81);
+text-align: center;
+    }
+    .log-input:hover{
+        background-color: #7500b9;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sales-container{
+    position: absolute;
+    width: 80%;
+    margin-top: 10px;
+    transform: translateX(22%);
+}

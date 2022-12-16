@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#listo{
+    background-color: green;
+    color: white;
+}
+#pending{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}

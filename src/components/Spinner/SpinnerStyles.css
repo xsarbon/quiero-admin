@@ -1,0 +1,19 @@
+/*MOBILE*/
+@media screen and (max-width: 767px){
+.spinner{
+    padding: 25%;
+}
+}
+
+/*TABLET*/
+@media screen and (min-width:767px) and (max-width:1023px){
+    .spinner{
+        padding: 25%;
+    }
+}
+/*ESCRITORIO*/
+@media screen and (min-width:1024px){
+    .spinner{
+        padding: 20% 40% 20% 40%;
+    }
+}

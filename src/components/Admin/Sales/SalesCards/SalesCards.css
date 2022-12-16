@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.link-sale{
+    text-decoration: none;
+    font-weight: 400;
+}
+.name-client{
+    font-weight: 400;
+}
+.contact-sale{
+    text-decoration: none;
+}

@@ -1,0 +1,47 @@
+@media screen and (max-width: 767px){
+    .filtro{    
+        width: 90%;
+        margin: auto;
+        padding-top: 100px;
+    }
+    .ir{
+        width: 50px;
+        height: 26px;
+        background-color: white;
+        font-weight: 400;
+        border-width: 0.5px;
+        color: black;
+    }
+    }
+    @media screen and (min-width:767px) and (max-width:1023px){
+        .filtro{    
+            width: 90%;
+            margin: auto;
+            padding-top: 100px;
+        }
+        .ir{
+            width: 50px;
+            height: 26px;
+            background-color: white;
+            font-weight: 400;
+            border-width: 0.5px;
+            color: black;
+        }
+    
+    }
+    
+    @media screen and (min-width:1024px){
+        .filtro{    
+            width: 1000px;
+            margin: auto;
+            padding-top: 100px;
+        }
+        .ir{
+            width: 50px;
+            height: 26px;
+            background-color: white;
+            font-weight: 400;
+            border-width: 0.5px;
+            color: black;
+        }
+    }

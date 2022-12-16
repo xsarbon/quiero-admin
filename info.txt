@@ -1,0 +1,61 @@
+Componentes Funcionales
+    -Importar react (opcional)
+    -Crear una funcion
+    -El nombre de la funcion debe comenzar con mayus
+    -La funcion debe retornar algo
+    -Exportar el componente
+
+Todo componente puede tener
+    -Props
+    -States
+    -Ciclo de vida
+    -Metodos del ciclo de vida
+
+Desestructuracion :
+
+    const miObj = {
+        a:1,
+        b:2,
+        c:3
+    };
+
+    en vez de hacer:
+    const a=miObj.a;
+    const b=miObj.b;
+    const c=miObj.c;
+
+    hacemos:
+    const {a,b,c}=miObj
+    console.log(a); --> imprime 1
+
+Object property shorthand
+    ----------
+    const nombre = "Nicolas";
+    const apellido = "Santucho"
+    const edad = 24
+
+    const usuario = {
+        nombre,
+        apellido,
+        edad
+ }
+
+ al momento de usar estos datos, puedo desestructurar directamente en el momento en el que recibo las Props
+
+ const Header = (props) =>{                 <---- Es decir, en lugar de hacer esto
+     const {nombre, apellido, edad}         <---- Es decir, en lugar de hacer esto
+ }                                          <---- Es decir, en lugar de hacer esto
+
+
+ const Header =({nombre, apellido, edad});  <--- puedo hacer esto y desestructurar directamente al recibir las props
+
+-------------------------------------
+cuando exportamos por default, al momento de importarlo, no se utilizan las llaves {}, en cambio, si hacemos una exportacion directa, al importar se debe utilizar las llaves { Elemento }
+
+export default App                               ------------->      import App from "./App"
+
+export const Dato = () => {return( datos )}      ------------->      import { Dato } from "./Dato"
+
+comienza en itemListContainer, resuelve la promise, la logica y se la pasa a itemList, la cual hace el map y envia esa info al componente item, quien recibe esa informacion y la renderiza
+
+instalar firebase: npm install firebase

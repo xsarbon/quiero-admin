@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.actualizar-cat{
+    background-color: aqua;
+    width: 80%;
+    position: absolute;
+    margin-top: 10px;
+    transform: translateX(22%);
+}
