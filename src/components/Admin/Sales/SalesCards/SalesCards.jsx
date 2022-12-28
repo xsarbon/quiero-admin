@@ -3,14 +3,12 @@ import './SalesCards.css'
 import Helper from './Helper'
 
 const SalesCards=({client})=>{
-    const helper = client.state
-    
     return (
         <>
         
-        <tr>
+        <tr >
             <td>
-                <NavLink className="link-sale" to={`/sale/${client.id}`}>
+                <NavLink key={client.id} className="link-sale" to={`/ventas/${client.id}`} sale={client} >
                 {client.id}
                 </NavLink>
             </td>
@@ -31,7 +29,7 @@ const SalesCards=({client})=>{
             <td>
                 Borrar
             </td>
-                <Helper value={helper}/>
+                <Helper value={client}/>
         </tr>
         
         </>

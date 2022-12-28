@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sale-container{
+        position: absolute;
+        width: 80%;
+        margin-top: 10px;
+        transform: translateX(22%);
+}
+
+.sale-detail{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #414141;
+}
+.done{
+    color: green;
+}
+.state{
+    color: black;
+}
+.pending{
+    color: red;
+}
+.data-client{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.13);
+    margin-left: 10px;
+}
+.name-client{
+    color: #414141;
+    font-weight: 600;
+}

@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+tr{
+    margin-top: 10px;
+}
+td{
+    margin-left: 10px;
+}
+.imagen{
+    width: 100px;
+    background-color: white;
+}

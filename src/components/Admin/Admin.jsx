@@ -6,6 +6,7 @@ const Admin = () => {
     return (
         <>
             <section className="Dashboard">
+                <SideBar/>
                 <Dashboard />
             </section>
         </>

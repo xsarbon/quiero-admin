@@ -8,6 +8,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import "./SubirProd.css"
+import SideBar from '../SideBar/SideBar';
 
 const SubirProd = () => {
     const [category,setCategory]=useState([])
@@ -60,6 +61,7 @@ const SubirProd = () => {
     }
 
     return (<>
+        <SideBar/>
         <form id='formul' onSubmit={handleSubmit(onSubmit)} > 
             <section>
                 <FloatingLabel

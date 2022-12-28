@@ -1,10 +1,14 @@
 import '../Analitics/Analitics.css'
+import SideBar from '../SideBar/SideBar'
 
 const Analitics=()=>{
     return(
-        <div className="analitics-container">
-            <h1>Analitics</h1>
-        </div>
+        <>
+            <SideBar/>
+            <div className="analitics-container">
+                <h1>Analitics</h1>
+            </div>
+        </>
     ) 
     
 }

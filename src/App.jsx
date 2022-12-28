@@ -9,14 +9,16 @@ import RefreshCat from "./components/Admin/RefreshCat/RefreshCat"
 import Analitics from "./components/Admin/Analitics/Analitics"
 import Categories from "./components/Admin/Categories/Categories"
 import Clients from "./components/Admin/Clients/Clients"
-import Log from './components/log/Log'
+import Log from '../src/components/Admin/log/Log'
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute"
-import { useState } from 'react'
+import Filter from './components/Admin/Sales/Filter/Filter'
 
-function App({ user }) {
+
+function App() {
   return (
     <>
       <CartContextProvider>
+        
         <HashRouter>
           <Routes >
             <Route path="/" element={<Log />} />
@@ -25,13 +27,49 @@ function App({ user }) {
                 <Admin />
               </ProtectedRoute>
             } />
-            <Route path="/ventas" element={<Sales />} />
-            <Route path="/edit" element={<EditProd />} />
-            <Route path="/subirprod" element={<SubirProd />} />
-            <Route path="/refreshcat" element={<RefreshCat />} />
-            <Route path="/analitics" element={<Analitics />} />
-            <Route path="/categories" element={<Categories />} />
-            <Route path="/clientes" element={<Clients />} />
+            
+            <Route path="/ventas" element={
+              <ProtectedRoute>
+                <Sales />
+              </ProtectedRoute>
+            } />
+
+            <Route path="/ventas/:id" element={
+              <ProtectedRoute>
+                <Filter />
+              </ProtectedRoute>
+            } />
+            
+            <Route path="/edit" element={
+              <ProtectedRoute>
+                <EditProd />
+              </ProtectedRoute>
+            } />
+            <Route path="/subirprod" element={
+              <ProtectedRoute>
+                <SubirProd />
+              </ProtectedRoute>
+            } />
+            <Route path="/refreshcat" element={
+              <ProtectedRoute>
+                <RefreshCat />
+              </ProtectedRoute>
+            } />
+            <Route path="/analitics" element={
+              <ProtectedRoute>
+                <Analitics />
+              </ProtectedRoute>
+            } />
+            <Route path="/categories" element={
+              <ProtectedRoute>
+                <Categories />
+              </ProtectedRoute>
+            } />
+            <Route path="/clientes" element={
+              <ProtectedRoute>
+                <Clients />
+              </ProtectedRoute>
+            } />
           </Routes>
         </HashRouter>
       </CartContextProvider>

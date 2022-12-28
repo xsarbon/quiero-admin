@@ -4,6 +4,8 @@ import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { useEffect, useState } from 'react';
 import SalesCards from './SalesCards/SalesCards';
 import Table from 'react-bootstrap/Table';
+import SideBar from '../SideBar/SideBar';
+import Product from './Sale/Product/Product';
 
 
 const Sales = ()=>{
@@ -17,13 +19,24 @@ const Sales = ()=>{
         const q = query(salesRef, orderBy("date",'desc'));
             const querySnapshot = await getDocs(q);
             querySnapshot.forEach((doc) => {
-                helper.push({state:doc.data().state,total:doc.data().total,quantity:doc.data().quantity,telephone:doc.data().telephone,name:doc.data().name,items:doc.data().items,id:doc.id, date:doc.data().date})
+                helper.push({
+                    state:doc.data().state
+                    ,total:doc.data().total
+                    ,quantity:doc.data().quantity
+                    ,telephone:doc.data().telephone
+                    ,name:doc.data().name
+                    ,items:doc.data().items
+                    ,id:doc.id
+                    ,date:doc.data().date
+                })
                 setClientList(helper)
                 
         });
     }
 
     return(
+        <>
+        <SideBar/>
         <div className="sales-container">
             <h1 className='sales-tittle'>Ventas</h1>
             <Table striped bordered hover>
@@ -49,6 +62,7 @@ const Sales = ()=>{
             
             
         </div>
+        </>
     )
 }
 export default Sales
